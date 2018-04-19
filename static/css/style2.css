@@ -1,0 +1,14 @@
+.container-top{
+	max-width: 560px;
+	float: left;
+}
+
+.responses{
+	padding-left: 15px;
+	
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}

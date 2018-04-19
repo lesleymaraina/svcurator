@@ -1,0 +1,49 @@
+div.one-third {
+	width: 47.5%;
+}
+
+div.one-third-second {
+	margin: 0;
+}
+
+div.one-third-last {
+	clear: both;
+	float: none;
+	width: auto;
+	padding: 20px 0 0 0;
+}
+
+div.nav ul li {
+	width: 25%;
+	border-bottom: 1px solid #bababa;
+}
+
+@media screen and (max-width: 620px) {
+	div.nav ul li {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	div.nav ul li {
+		width: 50%;
+		font-size: 85%;
+	}
+	
+	div.mobile-collapse {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+	
+	.hide-mobile {
+		display: none;
+	}
+	label {
+		height: auto;
+		margin-bottom:2.5%;
+		margin-top:10.5%;
+	}
+		
+}

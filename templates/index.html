@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SVcurator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="{{url_for('static', filename='portfolio-item.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='main.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/jquery.fancybox.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/style2.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='responsive.css')}}" rel="stylesheet" media="screen and (max-width: 900px)">
+
+
+    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">SVcurator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Show Variant Name and Size -->
+     <div class="clearfix mobile-collapse" style="margin-bottom:2.5%;margin-top:12.5%;">
+        <label>Variant: {{variant_info.variant_name}}</label>
+        <br>
+        <label>Size:{{variant_info.variant_size}} </label>
+      </div>
+
+
+    </div>
+
+
+
+
+
+<!-- Carousel and Survey -->
+    <div class="thirds clearfix">
+
+      <!-- Carousel -->
+      <div class="one-third mobile-collapse">
+            <!-- Show Progress Bar -->
+      <div class="container">
+      <div class="progress">
+
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: {{bar_percent_complete}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{bar_complete}}/{{bar_total}}</div>
+        </div>
+
+      </div>
+</div>
+<br>
+
+      <div class="thumbnails group">
+        <a href="{{url_for('static', filename='images/igv_test/' + variant_info.variant_name) + '.png'}}" data-caption="IGV" data-fancybox="image" style="float:left; max-height:49%; margin-top: 5%; margin-right:1%; padding-bottom: 11%;">
+        <img src="{{url_for('static', filename='images/igv_test/' + variant_info.variant_name) + '.png'}}" alt="IGV">
+        </a>
+        <a href="{{url_for('static', filename='images/10X_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="10X" data-fancybox="image" style="float:left; max-height:32.3%; width:49%; margin-right: 1%; margin-bottom: 11%;">
+          <img src="{{url_for('static', filename='images/10X_test/' + variant_info.variant_name) + '.jpeg'}}" alt="10X">
+        </a>
+        <a href="{{url_for('static', filename='images/250bp_test/' + variant_info.variant_name + '.jpeg')}}" data-caption="250bp" data-fancybox="image" style="float:right; max-height:49%; width:49%;margin-left: 1%; margin-bottom: 11%;">
+          <img src="{{url_for('static', filename='images/250bp_test/' + variant_info.variant_name + '.jpeg')}}" alt="250bp">
+        </a>
+        <a href="{{url_for('static', filename='images/300X_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="300X" data-fancybox="image" style="float:left; max-height:32.3%; width:49%; margin-top: 1%; margin-right: 1%; padding-bottom: 11%;">
+          <img src="{{url_for('static', filename='images/300X_test/' + variant_info.variant_name) + '.jpeg'}}" alt="300x">
+        </a>
+        <a href="{{url_for('static', filename='images/MP_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="MP" data-fancybox="image" style="float:right; max-height:49%; width:49%; margin-top: 1%; margin-left: 1%;padding-bottom: 11%;">
+          <img src="{{url_for('static', filename='images/MP_test/' + variant_info.variant_name) + '.jpeg'}}" alt="MP">
+        </a>
+        <a href="{{url_for('static', filename='images/PB_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="PB" data-fancybox="image" style="float:left; max-height:49%; width:49%; margin-top: 5%; margin-right:1%; padding-bottom: 11%;">
+          <img src="{{url_for('static', filename='images/PB_test/' + variant_info.variant_name) + '.jpeg'}}" alt="PB">
+        </a>
+        <!--<a href="{{url_for('static', filename='images/igv_test/' + variant_info.variant_name) + '.png'}}" data-caption="IGV" data-fancybox="image" style="float:left; max-height:49%; margin-top: 5%; margin-right:1%; padding-bottom: 11%;">-->
+        <!--<img src="{{url_for('static', filename='images/igv_test/' + variant_info.variant_name) + '.png'}}" alt="IGV">-->
+        <!--</a>-->
+        <a href="{{url_for('static', filename='images/dotplots_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="Dotplot" data-fancybox="image" style="float:left; max-height:49%; width:49%; margin-top: 5%; margin-right:1%; padding-bottom: 11%;">
+        </a>
+
+        <!--<a href="{{url_for('static', filename='images/gEval_test/' + variant_info.variant_name) + '.jpeg'}}" data-caption="gEval" data-fancybox="image" style="float:left; max-height:49%; width:49%; margin-top: 5%; margin-right:1%; padding-bottom: 11%;">-->
+
+        <!--</a>-->
+      </div>
+
+      </div>
+
+
+      <!-- Survey -->
+
+
+      <form method="POST">
+
+      <button type="submit" name='variantsubmit' value="left" class="btn btn-outline-primary"><</button>
+      <button type="submit" name='variantsubmit' value="right" class="btn btn-outline-primary">></button>
+
+      <div class="one-third one-third-second mobile-collapse">
+
+
+          <div style="width:47%; padding-right: 5%; float:left;">
+              <legend style="font-size:18px"><b>Q1:</b>Does a <b>{{variant_info.del_ins}}</b> exist at this site that has a size between <b>{{var_minus_20}}</b> bp and <b>{{var_plus_20}}</b> bp?</legend>
+                  <div class="form-check">
+                      {% for subfield in form.radios %}
+                      <div class="radio">
+                        <label>
+                          {{ subfield }}
+                          {{ subfield.label.text }}
+                        </label>
+                      </div>
+                      {% endfor %}
+                  </div>
+            </div>
+
+          <div style="width:40%; padding-right: 5%; float:right;">
+               <legend style="font-size:18px"><b>Q2:</b>Does any other variant >= 20bp exist at this site?</legend>
+                    <div class="form-check">
+                        {% for subfield in form.radios2 %}
+                        <div class="radio">
+                          <label>
+                            {{ subfield }}
+                            {{ subfield.label.text }}
+                          </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+          </div>
+
+          <div style="width:50%; padding-top:2.5%; padding-left:2.5%; float:left;">
+                <legend style="font-size:18px"><b>Q3: Genotype:</b>Select the genotype for this variant</legend>
+                      <div class="form-check">
+                          {% for subfield in form.radios3 %}
+                          <div class="radio">
+                            <label>
+                              {{ subfield }}
+                              {{ subfield.label.text }}
+                            </label>
+                          </div>
+                          {% endfor %}
+                      </div>
+           </div>
+
+          <div style="width:50%; padding-top:2.5%; padding-right:2.5%; float:right;">
+                <legend style="font-size:18px"><b>Q4: Genotype Confidence: </b>Note confidence in the selected genotype:</legend>
+                      <div class="form-check">
+                          {% for subfield in form.radios4 %}
+                          <div class="radio">
+                            <label>
+                              {{ subfield }}
+                              {{ subfield.label.text }}
+                            </label>
+                          </div>
+                          {% endfor %}
+                      </div>
+           </div>
+
+      </div>
+</form>
+
+      <!--/Survey-->
+
+</div><!--/Carousel and Survey-->
+
+  <!-- Responses Dropdown: Show User Responses -->
+    <!--<div class='responses'>-->
+    <!--  <h4 class="my-4">View Responses</h4>-->
+    <!--  <ul id="multicol-menu" class="nav pull-right">-->
+    <!--      <li class="dropdown">-->
+    <!--          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+    <!--            Responses-->
+    <!--          </button>-->
+    <!--          <ul class="dropdown-menu scrollable-menu">-->
+    <!--              <li>-->
+    <!--                  <div class="row" style="width: 400px;">-->
+                          <!-- Column 1 -->
+    <!--                      {% for variant in variant_table %}-->
+    <!--                      <ul class="list-unstyled col-md-3">-->
+    <!--                          <li><a>{{variant_table.variant_name}}</a></li>-->
+    <!--                      </ul>-->
+    <!--                      {% endfor %}-->
+                          <!-- Column 2 -->
+    <!--                      {% for user_response in user_responses %}-->
+    <!--                      <ul class="list-unstyled col-md-3">-->
+    <!--                          <li><a>{{user_response.q1_answer_ref.answer_text}}</a></li>-->
+    <!--                      </ul>-->
+    <!--                      {% endfor %}-->
+                          <!-- Column 3-->
+    <!--                      {% for user_response in user_responses %}-->
+    <!--                      <ul class="list-unstyled col-md-3">-->
+    <!--                          <li><a>{{user_response.q2_answer_ref.answer_text}}</a></li>-->
+    <!--                      </ul>-->
+    <!--                      {% endfor %}-->
+                          <!-- Column 4-->
+    <!--                      {% for user_response in user_responses %}-->
+    <!--                      <ul class="list-unstyled col-md-3">-->
+    <!--                          <li><a>{{user_response.q3_answer_ref.answer_text}}</a></li>-->
+    <!--                      </ul>-->
+    <!--                      {% endfor %}-->
+    <!--                  </div>-->
+    <!--              </li>-->
+    <!--          </ul>-->
+    <!--      </li>-->
+    <!--  </ul>-->
+
+    <!--</div>-->
+    <!-- /Responses Dropdown -->
+
+    </div>
+    <!-- /.container -->
+<br>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; svcurator 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.fancybox.min.js')}}"></script>
+
+     <script>
+        $(document).ready(function(){
+          $('[data-fancybox="images"]').fancybox({
+           });
+          });
+      </script>
+
+  </body>
+
+</html>

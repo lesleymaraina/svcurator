@@ -1,0 +1,90 @@
+/*Make all of the images responsive*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+/*.row{
+	margin-right: -20px;
+}*/
+
+/*Get rid of extra padding on the right*/
+.thumbnails{
+	margin-right: 150px;
+}
+
+/*Resize images so that they are all the same size*/
+.thumbnails a{
+	float: left;
+	width: 25%;
+	margin-bottom: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.thumbnails img{
+	display: block;
+}
+
+/*Hover over selected image; Make other images opaque*/
+/*Background Images*/
+.thumbnails:hover img{
+	opacity: .9;
+	transform: scale(0.98);
+}
+/*Selected Image*/
+.thumbnails img:hover{
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*.section {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+.content-area {
+	background-color: #FFF;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.col-md-11 {width: 91.662%}
+	.col-md-10 {width: 83.332%;}
+	.col-md-9 {width: 75%;}
+	.col-md-8 {width: 66.662%;}
+	.col-md-7 {width: 58.331%}
+	.col-md-6 {width: 50%;}
+	.col-md-5 {width: 41.662%}
+	.col-md-4 {width: 33.332%;}
+	.col-md-3 {width: 25%;}
+	.col-md-2 {width: 16.662%;}
+	.col-md-1 {width: 8.332%;}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.content-area {
+		padding-top: 20px;
+	}
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+	
+	body {
+		font-size: 16px;
+	}
+	
+	.container {
+		max-width: 1200px;
+	}
+	
+}*/

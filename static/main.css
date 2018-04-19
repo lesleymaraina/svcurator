@@ -1,0 +1,165 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+	font-size: 93%;
+	line-height: 1.5em;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+/*  outline: black;*/
+  background-size: 100%, 100%;
+  border-radius: 50%;
+/*  border: 1px solid black;*/
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 25px;
+  color: #375f8880;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 25px;
+  color: #375f8880;
+}
+
+#myCarousel {
+  margin-top: 40px;
+}
+
+.carousel-linked-nav,
+.carousel-linked-projects,
+.item img {
+  display: block; 
+  margin: 0 auto;
+}
+
+.carousel-linked-nav,
+.carousel-linked-projects {
+  width: 120px;
+  margin-bottom: 20px;   
+}
+
+
+
+img {
+	max-width: 100%;
+	/*height: auto;*/
+	margin: 0 0 10px 0;
+}
+
+/* Section Inner */
+div.section-inner {
+	max-width: 1100px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+/* Header */
+div.header {
+	background-color: #E9E9E9;
+	padding: 40px 0;
+}
+
+/* Navigation */
+div.nav {
+	background-color: #d4d4d4;
+}
+
+div.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+div.nav ul li {
+	list-style: none;
+	float: left;
+	font-size: 93%;
+}
+
+div.nav ul li a:link,
+div.nav ul li a:visited {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #000;
+	border-right: 1px solid #bababa;
+}
+
+/* Body Content */
+div.body-content {
+	padding: 50px 0;
+	background-color: #FFF;
+}
+
+/* Thirds */
+div.thirds {
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+div.one-third {
+	width: 40%;
+	float: left;
+	margin-right: 10%;
+}
+
+div.one-third-last {
+	margin: 0;
+}
+
+/* Main Column */
+div.main {
+	width: 65%;
+	float: left;
+	margin-right: 5%;
+}
+
+/* Side Column */
+div.side {
+	width: 30%;
+	float: left;
+}
+
+/* Info Box */
+div.info-box-a {
+	background-color: #9bdaef;
+	padding: 20px;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+}
+
+div.info-box-b {
+	background-color: #efdb7f;
+	padding: 20px;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+}
+
+/* Footer */
+div.footer {
+	background-color: #3f3f3f;
+	color: #FFF;
+	padding: 15px 0;
+	text-align: center;
+}
+
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }

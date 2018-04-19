@@ -1,1 +1,1 @@
-# svcurator
+# practice_flask_app
