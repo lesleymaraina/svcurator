@@ -10,4 +10,4 @@ More information on SVCurator can be found in the following publication:
 [A crowdsourced set of curated structural variants for the human genome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007933)
 
 PloS Computational Biology
-June 19 2020
+(June 19 2020)
