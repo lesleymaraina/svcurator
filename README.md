@@ -11,4 +11,3 @@ More information on SVCurator can be found in the following publication:
 
 PloS Computational Biology
 June 19 2020
-https://doi.org/10.1371/journal.pcbi.1007933
